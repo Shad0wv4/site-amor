@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/sadness.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estou Triste</title>
+</head>
+<style>
+    button {
+        padding: 10px;
+    width: 200px;
+    background: linear-gradient(90deg, #0008f2, #0036d8);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Poppins;
+    margin-left: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+</style>
+<body>
+    <div class="fade-in-up">
+     <h1>Ah meu amorrr,<br> leia isso:  </h1>
+
+     <div>
+        <button id="playButton" class="music-button">💙música pra animar</button>
+    
+        <div id="emojiContainer"></div>
+
+        <audio id="myMusic">
+            <source src="../assets/Fitz And The Tantrums - Out Of My League [Official Lyric Video].mp3" type="audio/mp3">
+            Seu navegador não suporta a reprodução de áudio.
+        </audio>
+        <img src="../assets/in-love-animate.svg" alt="">
+
+
+        <p>
+            Oii meu amorr, sinto muito em saber disso. Você é a melhor pessoa que eu conheço e ver você assim me corta o coração, mas quero que vc saiba que eu te amo demais, você é a garota que eu pedi a deus, nunca eu duvidei do seu amor, pois ele é algo que não deixa dúvidas.
+Quero que vc beba uma agua e se estiver chorando saiba que isso é normal e não é sinal de fraqueza, se quiser desabafar aperte no botão de "preciso de você", Saiba que tudo vai ficar bem. Deus coloca alguns obstaculos no nosso caminho para que a gente amadureça e cresça como pessoa, deus só da a cruz para quem consegue carregar
+e eu sei que você é forte meu amor. Quero que vc pense em coisas boas, leia um livro, escute música, Assista um filme que você goste, escreva poemas, converse comigo, faça coisas que você gosta. A vida tem dessas e ta tudo bem! Nunca pense que você não é suficiente, em você eu vi a coisa mais linda do mundo, sua personalidade me encanta
+sua aparencia me facina e eu te amo muito por tudo que você é! Respire fundo e deixe passar, você é forte amor! Você é uma garota incrivel e sei que vai conquistar o mundo ainda, você tem pelo menos 1000 capacidades em você, então aproveite-as, não deixe que um momento passageiro te faça perder sua essencia.
+Eu te amo com toda minha alma, saiba disso! PS: Te amo🤍
+        </p>
+        <button style="" id="btn-preciso" onclick="redirectToPreciso()">Preciso de você</button>
+    </div>
+    <div id="emoji-container"></div>
+    <script src="../js/sad.js"></script>
+    <script>
+        function redirectToPreciso() {
+    window.location.href = 'https://wa.me/5514997444626?text=Preciso%20de%20você%20meu%20amor!'; // Caminho da página para Feliz
+  }
+    </script>
+</body>
+</html>

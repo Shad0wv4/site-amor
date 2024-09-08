@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 270px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+   
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    background: linear-gradient(90deg, #5b00f2, #D500E9);
+    font-family: Poppins;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0px;
+    font-size: 30px;
+   
+   
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #F3F3F3;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+
+button {
+    padding: 15px;
+    width: 250px;
+    background: linear-gradient(90deg, #5b00f2, #D500E9);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Poppins;
+    margin-left: 22px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6c63ff;
+}
+
+/* Adiciona essa parte para a animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animação da borda */
+@keyframes borderSpin {
+    0% {
+        border: 2px solid transparent;
+    }
+    50% {
+        border: 2px solid rgba(128, 0, 128, 0.5);
+    }
+    100% {
+        border: 2px solid #6c63ff; /* Cor roxa */
+    }
+}
+
+/* Aplica a animação quando o campo de input estiver focado */
+input:focus {
+    animation: borderSpin 1s ease-in-out forwards;
+    outline: none;
+}
+
